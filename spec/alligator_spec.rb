@@ -1,7 +1,10 @@
 require './lib/alligator'
+require 'rspec'
+require 'pry'
 
 RSpec.describe Alligator do
-    xit 'exists' do
+    it 'exists' do
+        binding.pry
         amber = Alligator.new('Amber', 24)
 
         expect(amber).to be_a(Alligator)
